@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stories of Heartbreak</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #fafafa;
+      color: #333;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      background: #ddd;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .tab.active {
+      background: white;
+      border-bottom: 2px solid white;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      border: 1px solid #ccc;
+      background: white;
+      padding: 20px;
+      border-radius: 0 5px 5px 5px;
+    }
+
+    .tab-content.hidden {
+      display: none;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 5px;
+      font-weight: normal;
+      font-style: italic;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('home')">Stories of Heartbreak</div>
+    <div class="tab" onclick="showTab('posts')">Posts</div>
+  </div>
+
+  <div id="home" class="tab-content">
+    <h1>Stories of Heartbreak</h1>
+    <h2>Am I being molded or am I just plain old suffering?</h2>
+  </div>
+
+  <div id="posts" class="tab-content hidden">
+    <p>No posts yet. But the heartbreak continues...</p>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      // Hide all contents
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      // Remove active from all tabs
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+      // Show selected content
+      document.getElementById(tabId).classList.remove('hidden');
+      // Set tab active
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
