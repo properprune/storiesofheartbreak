@@ -5,7 +5,6 @@
   <title>Stories of Heartbreak</title>
   <style>
     body {
-</script>
       font-family: Arial, sans-serif;
       margin: 40px;
       background: #fafafa;
@@ -56,8 +55,8 @@
       line-height: 1.6;
     }
   </style>
-<script>
-        function showTab(tabId) {
+  <script>
+        function showTab(tabId, event) {
         // Hide all tab contents
           document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
     
@@ -70,12 +69,13 @@
         // Add 'active' class to clicked tab
           event.target.classList.add('active');
   }
+  </script>
 </head>
 <body>
 
   <div class="tabs">
-    <div class="tab active" onclick="showTab('home')">Stories of Heartbreak</div>
-    <div class="tab" onclick="showTab('posts')">Posts</div>
+    <div class="tab active" onclick="showTab('home', event)">Stories of Heartbreak</div>
+    <div class="tab" onclick="showTab('posts', event)">Posts</div>
     <div class="tab" onclick="showTab('contact', event)">Contact</div>
   </div>
 
