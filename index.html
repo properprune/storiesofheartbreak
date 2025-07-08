@@ -56,7 +56,7 @@
     }
   </style>
   <script>
-        function showTab(tabId, event) {
+        function showTab(tabId, clickedTab) {
         // Hide all tab contents
           document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
     
@@ -67,16 +67,16 @@
           document.getElementById(tabId).classList.remove('hidden');
 
         // Add 'active' class to clicked tab
-          event.target.classList.add('active');
+          clickedTab.classList.add('active');
   }
   </script>
 </head>
 <body>
 
   <div class="tabs">
-    <div class="tab active" onclick="showTab('home', event)">Stories of Heartbreak</div>
-    <div class="tab" onclick="showTab('posts', event)">Posts</div>
-    <div class="tab" onclick="showTab('contact', event)">Contact</div>
+    <div class="tab active" onclick="showTab('home', this)">Stories of Heartbreak</div>
+    <div class="tab" onclick="showTab('posts', this)">Posts</div>
+    <div class="tab" onclick="showTab('contact', this)">Contact</div>
   </div>
 
   <div id="home" class="tab-content">
