@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://annagirardeau.github.io/sitemap.xml
