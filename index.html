@@ -5,20 +5,6 @@
   <title>Stories of Heartbreak</title>
   <style>
     body {
-      <script>
-        function showTab(tabId) {
-        // Hide all tab contents
-          document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
-    
-        // Remove 'active' class from all tabs
-          document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-
-        // Show the selected tab content
-          document.getElementById(tabId).classList.remove('hidden');
-
-        // Add 'active' class to clicked tab
-          event.target.classList.add('active');
-  }
 </script>
       font-family: Arial, sans-serif;
       margin: 40px;
@@ -70,6 +56,20 @@
       line-height: 1.6;
     }
   </style>
+<script>
+        function showTab(tabId) {
+        // Hide all tab contents
+          document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+    
+        // Remove 'active' class from all tabs
+          document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+
+        // Show the selected tab content
+          document.getElementById(tabId).classList.remove('hidden');
+
+        // Add 'active' class to clicked tab
+          event.target.classList.add('active');
+  }
 </head>
 <body>
 
