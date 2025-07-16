@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="Dho6-MjnyPcckFNSo_o7zv9cGQfJKqEE7JGRVRA1KNI" />
   <meta charset="UTF-8">
   <title>Stories of Heartbreak</title>
   <style>
@@ -42,86 +41,91 @@
       display: none;
     }
 
-    h1 {
-      margin: 0;
+    a {
+      color: #007acc;
+      text-decoration: none;
     }
 
-    h2 {
-      margin-top: 5px;
-      font-weight: normal;
-      font-style: italic;
-      color: #666;
-    }
-    p {
-      line-height: 1.6;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
+
   <script>
-        function showTab(tabId, clickedTab) {
-        // Hide all tab contents
-          document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
-    
-        // Remove 'active' class from all tabs
-          document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    function showTab(tabId, clickedTab) {
+      // Hide all tab contents
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
 
-        // Show the selected tab content
-          document.getElementById(tabId).classList.remove('hidden');
+      // Remove 'active' class from all tabs
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
 
-        // Add 'active' class to clicked tab
-          clickedTab.classList.add('active');
-  }
+      // Show the selected tab content
+      document.getElementById(tabId).classList.remove('hidden');
+
+      // Add 'active' class to clicked tab
+      clickedTab.classList.add('active');
+    }
+
+    function showPost(postId) {
+      // Hide all tab contents
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+
+      // Show only the selected post
+      document.getElementById(postId).classList.remove('hidden');
+
+      // Remove 'active' from all top tabs
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    }
   </script>
 </head>
+
 <body>
 
   <div class="tabs">
-    <div class="tab active" onclick="showTab('home', this)">Stories of Heartbreak</div>
+    <div class="tab active" onclick="showTab('home', this)">Home</div>
     <div class="tab" onclick="showTab('posts', this)">Posts</div>
-    <div class="tab" onclick="showTab('resources', this)">Resources</div>
-    <div class="tab" onclick="showTab('contact', this)">Contact</div>
   </div>
 
   <div id="home" class="tab-content">
     <h1>Stories of Heartbreak</h1>
     <h2>Am I being molded or am I just plain old suffering?</h2>
-    <p> Let’s start from day 0. The person you love most in the world has exited your life. 
-      To me this felt like I was dying. I felt like there was no way that I was going to keep living in this world without the person I love. 
-      Not only the person I love, the person who makes me laugh, who gives me hugs, who goes on adventures big and small with me. 
-      How the hell are you supposed to accept that reality? How do you go on? Well, lucky for me and you, time goes on for you. 
-      You don’t have to lift a finger. 
-      <br>
-      <br>
-      To give you the backstory, my ex, let's call him SSB (stands for sweet silly boy because he is all three of those things) and I dated for 9-10 months. 
-      I’m not even sure actually. And yeah, I had the best times of my life with him. Unfortunately, stuff happened that I don’t understand at all (and is not worth getting into at the moment or maybe ever) which led to me and him breaking up. 
-      I tried to understand it for a bit and finally had to accept it as unknowable for now. 
-      So that’s what brought me to day 0. That’s what brought me to feeling like my throat was closing up, my stomach and chest were tight and uneasy, and tears were streaming down my face until I had a headache so bad I had to force myself to take a break.
-      <br>
-      <br>
-      To be clear, everything I'm writing is extremally biased and comes from feeling, not fact. If I were to write, "he never loved me", this is how it felt to me at the time, but is very likely not factually correct. So when some of my thoughts seem unfair or problematic, they probably are. I'm writing from a place of confusion and hurt and one perspective in a situation that involves multiple people.
-</p>
+    <p>This is your homepage intro or main post content...</p>
   </div>
 
   <div id="posts" class="tab-content hidden">
+    <h1>Posts</h1>
+    <p><a href="#" onclick="showPost('post-thoughts')">What Do I Do With the Thoughts I Don't Want?</a></p>
+    <p><a href="#" onclick="showPost('post-thankful')">Am I Thankful For Our Relationship?</a></p>
+    <p><a href="#" onclick="showPost('post-not-nice')">If I'm Not Nice, What Am I?</a></p>
+    <p><a href="#" onclick="showPost('post-dating-new')">What If He Starts Dating Someone New?</a></p>
+    <p><a href="#" onclick="showPost('post-voicenotes')">Voicenotes</a></p>
+    <p><a href="#" onclick="showPost('post-doing-best')">Just Doing Out Best</a></p>
+    <p><a href="#" onclick="showPost('post-places')">The Places We Went</a></p>
+  </div>
+
+  <div id="post-thoughts" class="tab-content hidden">
     <h1>What Do I Do With the Thoughts I Don't Want?</h1>
-    <p>Here are some things I feel embarrassed by:
+    <p> <p>Here are some things I feel embarrassed by:
       <br>
       <br>
 
-1. It has been three months since me and SSB broke up and there has not been a single day he hasn’t been on my mind for a significant portion of the day. Some days are good and he only pops up in the background or on a walk through the neighborhood. Some days are hard and he takes over my mind and I cry a lot. I feel weird that I haven’t been able to get to a point where he’s not always there even though I am doing a lot better. I feel like there should be at least some days that he doesn’t pop up. SSB gave me a book called Intrusions by Ursula Hegi right before we broke up. In the book, the story keeps getting intruded on by the author’s real life, side stories, and other characters in the book. I think of him like an intrusion. Go away SSB, you’re not wanted in my brain. You’re INTRUDING.
-<br>
-<br>
-2. I would still take SSB back if he asked. I still have moments when I think we’re meant to be together. I miss him terribly. I feel so silly because I’m pretty confident he has moved on and is living happily on his own. Also, I don’t think at this point getting back together is actually a good idea. But that doesn’t stop me from secretly wanting it.
-<br>
-<br>
-3. I think SSB is the hottest person in the world. His mannerisms, his face, his personality. I think he’s beautiful. I also felt very undesired towards the end of our relationship, like he didn’t really find me attractive, and that also embarrassingly makes me think about how he doesn’t think I’m the hottest person in the world. I have a fear that I won’t find anyone else I date as attractive. And I have been giving that fear a little too much space in my mind.
-<br>
-<br>
-4. I thought me and SSB would be together forever. I thought we were each other’s people. Partly because I felt so completely myself around him which is a rare feeling for me. Probably mostly because he was obsessed with me the first month we were dating and future faked quite a bit. He told me he never wanted to not have me in his life, he talked about getting a cat and an apartment together, he said I was everything he was looking for in a partner. Only to then refuse to commit to living together one day in the future some months later (sorry that was a little more accusatory than I was planning). I fully bought into this. I fell more and more in love with him and continued to imagine our adventures to come. Meanwhile, he was getting more and more unsure he even wanted to be in a relationship. So yeah, I fell for it. I really believed it and that feels silly.
-<br>
-<br>
-It feels good to get these embarrassing thoughts out in the open. I have not treated them very well. I’ve tried to shove them away, berate them, and not let them in. They always find a way in anyways no matter how hard I try to pretend they don’t exist. So, I’ve been trying a new tactic the past few days. I’m letting them be. I’m recognizing that they aren’t necessarily helpful and accurate thoughts, but they're there, and it’s totally normal that they’re there. When they arrive in my mind, I say, “I don’t love that I still think this, but it makes sense that I do”.  I’m feeling a lot of feelings. Not all of them will be what I want.
-</p>
-    
+        1. It has been three months since me and SSB broke up and there has not been a single day he hasn’t been on my mind for a significant portion of the day. Some days are good and he only pops up in the background or on a walk through the neighborhood. Some days are hard and he takes over my mind and I cry a lot. I feel weird that I haven’t been able to get to a point where he’s not always there even though I am doing a lot better. I feel like there should be at least some days that he doesn’t pop up. SSB gave me a book called Intrusions by Ursula Hegi right before we broke up. In the book, the story keeps getting intruded on by the author’s real life, side stories, and other characters in the book. I think of him like an intrusion. Go away SSB, you’re not wanted in my brain. You’re INTRUDING.
+        <br>
+        <br>
+        2. I would still take SSB back if he asked. I still have moments when I think we’re meant to be together. I miss him terribly. I feel so silly because I’m pretty confident he has moved on and is living happily on his own. Also, I don’t think at this point getting back together is actually a good idea. But that doesn’t stop me from secretly wanting it.
+        <br>
+        <br>
+        3. I think SSB is the hottest person in the world. His mannerisms, his face, his personality. I think he’s beautiful. I also felt very undesired towards the end of our relationship, like he didn’t really find me attractive, and that also embarrassingly makes me think about how he doesn’t think I’m the hottest person in the world. I have a fear that I won’t find anyone else I date as attractive. And I have been giving that fear a little too much space in my mind.
+        <br>
+        <br>
+        4. I thought me and SSB would be together forever. I thought we were each other’s people. Partly because I felt so completely myself around him which is a rare feeling for me. Probably mostly because he was obsessed with me the first month we were dating and future faked quite a bit. He told me he never wanted to not have me in his life, he talked about getting a cat and an apartment together, he said I was everything he was looking for in a partner. Only to then refuse to commit to living together one day in the future some months later (sorry that was a little more accusatory than I was planning). I fully bought into this. I fell more and more in love with him and continued to imagine our adventures to come. Meanwhile, he was getting more and more unsure he even wanted to be in a relationship. So yeah, I fell for it. I really believed it and that feels silly.
+        <br>
+        <br>
+        It feels good to get these embarrassing thoughts out in the open. I have not treated them very well. I’ve tried to shove them away, berate them, and not let them in. They always find a way in anyways no matter how hard I try to pretend they don’t exist. So, I’ve been trying a new tactic the past few days. I’m letting them be. I’m recognizing that they aren’t necessarily helpful and accurate thoughts, but they're there, and it’s totally normal that they’re there. When they arrive in my mind, I say, “I don’t love that I still think this, but it makes sense that I do”.  I’m feeling a lot of feelings. Not all of them will be what I want.
+    </p>
+  </div>
+
+  <div id="post-thankful" class="tab-content hidden">
     <h1>Am I Thankful For Our Relationship?</h1>
     <p>One of the cheesiest things I told SSB was that I used to have so many regrets about all of the choices I had made in my life in the past and now I don’t because I met him. And every one of those choices led me to meeting him. I was at a stoplight waiting to exit a parking lot and talking on the phone with him when I told him this. 
       I remember the glow of the green light quite clearly. After we broke up, I would cry thinking about that memory because now it felt like all my choices just led to an unbearable pain. The regret was back. And I was angry that SSB had put me through this. 
@@ -139,7 +143,9 @@ It feels good to get these embarrassing thoughts out in the open. I have not tre
       <br>
       I experienced many joyful outdoor adventures.I received a lot of help in understanding statistics. I got to feel really loved for some time which can be a rare feeling. I got to love someone else really deeply. I learned to love and like myself on a deeper level. I drank homemade kombucha. I tried backcountry skiing. I laughed really really hard. I acted silly a lot and felt completely safe. I felt at home in Seattle for the first time. I met a beautiful and accepting family who welcomed me during holidays when I didn’t fly home. I met my friend Kayla, who taught me how to knit! And after it ended, I learned how to build a life for myself that is full without a boyfriend in it.  I learned how I respond to conflict in a relationship and how I can respond better in the future. I learned that I am more capable than I used to believe. And I was reminded that I can get through unimaginably difficult feelings. So overall, it was a net positive.
 </p>
+  </div>
 
+  <div id="post-not-nice" class="tab-content hidden">
     <h1>If I'm Not Nice, What Am I?</h1>
     <p>As I’ve mentioned, I didn’t always act in the most respectful way after our breakup. Everytime the anxiety became too much, I would text. I asked him to block me on every platform possible to try to save myself from embarrassment but still managed to by emailing him at his work email. I can recognize now that it’s not a good look, and to be honest I never realized the weight that work emails have in this world. Probably because I use my work email to chat with my brother and send crossword puzzles back and forth to friends. 
       <br>
@@ -159,9 +165,11 @@ It feels good to get these embarrassing thoughts out in the open. I have not tre
       This is a comforting thought as I navigate knowing SSB might see me in a more negative light. He may forgive me and not let my actions that came from heartbreak tarnish how he sees me and our relationship or he might not. I can’t control it. One thing I do know is that he has hurt me as well. He has said things out of confusion and pain and it does not tarnish how I view him one bit. I may realize we weren’t right for each other at this moment in our lives, but I still think he is a beautiful, sweet, silly, good person.
 
 </p>
+  </div>
 
+    <div id="post-dating-now" class="tab-content hidden">
     <h1>What If He Starts Dating Someone New?</h1>
-    <p>I was on a run today and I had a thought that made my stomach drop. It may be a bit weird that this is the first time the thought occurred, but I guess it had become more of a reality: SSB dating someone else. I had been having a decent day before this disturbing thought popped into my head and I was also disturbed by the impact it was having on me. I didn’t think I could handle it. The options were to do everything in my power never to find out that he is dating again or get destroyed when I do find out. Why? Why should it matter so much what this person who is no longer in my life is doing? Here are a few facts:
+ <p>I was on a run today and I had a thought that made my stomach drop. It may be a bit weird that this is the first time the thought occurred, but I guess it had become more of a reality: SSB dating someone else. I had been having a decent day before this disturbing thought popped into my head and I was also disturbed by the impact it was having on me. I didn’t think I could handle it. The options were to do everything in my power never to find out that he is dating again or get destroyed when I do find out. Why? Why should it matter so much what this person who is no longer in my life is doing? Here are a few facts:
     <br>
     <br>
       1. SSB’s actions do not have anything to do with how I live my life now.<br>
@@ -184,8 +192,10 @@ It feels good to get these embarrassing thoughts out in the open. I have not tre
     I know these are ridiculous unhelpful thoughts but hey, I’m just trying to be honest. I’m trying to figure out why I was so triggered by the idea of SSB moving on. I think it’s because it makes me feel unworthy and definitely not awesome despite that being fact #5. It tells me that despite how much work I have put into loving myself, supporting myself, being kind to myself, and knowing I am worthy of consistent love, there is still so much more work to be done. I am nowhere near impermeable to external factors affecting my self worth. In fact, they can crumble with a single thought. But at least now I know what is fact and what is not (for the most part). That’s a great start. And also, when I really think about it, SSB is probably not going to have changed that much and the next person will have to go through what I already experienced and decided was not for me. I'm not jealous of that.
 </p>
     
+  </div>
 
-      <h1>The Voice Memo That Reminds Me Why It Needed to End:</h1>
+  <div id="post-voicenotes" class="tab-content hidden">
+ <h1>The Voice Memo That Reminds Me Why It Needed to End:</h1>
       <p>December 8, 2024
       <br>
       <br>
@@ -205,9 +215,11 @@ It feels good to get these embarrassing thoughts out in the open. I have not tre
       <br>
       POV: The month of bliss.
       </p>
-    
-     <h1>Just Doing Our Best</h1>
-      <p>Here’s the truth. There are people (like me) that think they need connection so badly that it gets to a point where their body feels like it’s going to explode and the anxiety gets worse and worse and worse until it feels like the only option is to reach out to your ex. Truely, it feels like that is the only way to survive in this world. I did this and if anyone got through the breakup process without doing this then I don’t think you felt the level of anxiety and despair that I felt because it truly felt like life or death (did I mention I have an anxiety disorder?).
+  </div>
+
+    <div id="post-doing-best" class="tab-content hidden">
+ <h1>Just Doing Our Best</h1>
+ <p>Here’s the truth. There are people (like me) that think they need connection so badly that it gets to a point where their body feels like it’s going to explode and the anxiety gets worse and worse and worse until it feels like the only option is to reach out to your ex. Truely, it feels like that is the only way to survive in this world. I did this and if anyone got through the breakup process without doing this then I don’t think you felt the level of anxiety and despair that I felt because it truly felt like life or death (did I mention I have an anxiety disorder?).
       <br>
       <br>
       Do I feel a lot of shame? Yes. Did SSB find this disrespectful? Yes. Do I wish he could have had more understanding that my coping is very different than his? Yes. But you know what? We were both hurting and I don’t judge him for anything he did in those 2 months because all you can do is your best when going through pain. I do judge myself because I feel embarrassed. I feel embarrassed I let my anxiety and anger control my actions. But I was doing my best too. 
@@ -219,33 +231,16 @@ It feels good to get these embarrassing thoughts out in the open. I have not tre
       Sometimes your best means pulling away and becoming cold when your ex wants to discuss something. But also, sometimes your best is going on a hike with your best friend and falling in love with the world again and again. Sometimes your best is feeding yourself and treating yourself with kindness. Your best does not mean perfect. It just means your best in your current mindset, your current situation, and your current knowledge of the world. Gotta have some compassion.
       </p>
 
-    
-    
-    <h1>The Places We Went</h1>
-      <p> The places we went include everywhere. We went to every location. We went to the QFC by my house. We bought a melon at Whole Foods. We walked to PCC while smoking a joint and laughed uncontrollably. Hmm, was our relationship very food based or am I just obsessed with grocery stores? No, there’s other places too. We went everywhere, remember? We went to the climbing gym and he told me he was proud to be my boyfriend. We went to the HRC and worked on homework together. We went to Costco to buy muffins for our camping trip. We went to the Central District to help his brother move. We went to the Waterfront Downtown and pretended we were tourists and lightly debated Louigi Mangioni. We went to Cap Hill. We went to Ballard. Snoqualmie? Check. Ikea? Check. Utah? No, but that’s where SSB is from and every time it’s brought up which is weirdly a lot I get sick to my stomach. The point is we went everywhere and I have no peace. I can’t escape the heart dropping feeling of a memory. I could maybe hide in my bed but then I’d remember our wiggles and cuddles. So instead, I go to the places anyway and I bear the memories and I wonder how we went so many places and if the places will ever become neutral again.
+  </div>
+
+   <div id="post-places" class="tab-content hidden">
+ <h1>The Places We Went</h1>
+<p> The places we went include everywhere. We went to every location. We went to the QFC by my house. We bought a melon at Whole Foods. We walked to PCC while smoking a joint and laughed uncontrollably. Hmm, was our relationship very food based or am I just obsessed with grocery stores? No, there’s other places too. We went everywhere, remember? We went to the climbing gym and he told me he was proud to be my boyfriend. We went to the HRC and worked on homework together. We went to Costco to buy muffins for our camping trip. We went to the Central District to help his brother move. We went to the Waterfront Downtown and pretended we were tourists and lightly debated Louigi Mangioni. We went to Cap Hill. We went to Ballard. Snoqualmie? Check. Ikea? Check. Utah? No, but that’s where SSB is from and every time it’s brought up which is weirdly a lot I get sick to my stomach. The point is we went everywhere and I have no peace. I can’t escape the heart dropping feeling of a memory. I could maybe hide in my bed but then I’d remember our wiggles and cuddles. So instead, I go to the places anyway and I bear the memories and I wonder how we went so many places and if the places will ever become neutral again.
       </p>
-  </div>
-  
-   <div id="resources" class="tab-content hidden">
-    <h1>For the current or next heartbreak...</h1>
-     <br>
-     <br>
 
-    <p>Podcast on What Your Role Might Be in A Relationship That Feels One Sided (Instead of blaming it all on them)
-      <br>
-      <br>
-       <a href= "https://www.youtube.com/watch?v=nDcK0RTHjZ8">On Attachment, "#194: When You Don't Feel Like a Priority in Your Relationship"</a>
-</p>
   </div>
-  
-  <div id="contact" class="tab-content hidden">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3ENVYQUBmKrPDKWxRUtzFGyIy1JqnBJp2OWbBQvYjc3BSDA/viewform?usp=header"
-        width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    
-  </div>
-  
-
-  
 
 </body>
 </html>
+
+
